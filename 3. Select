@@ -1,0 +1,17 @@
+SELECT * FROM "characters"
+
+SELECT name, weapon FROM "characters"
+
+SELECT name, weapon FROM "characters" ORDER BY name DESC
+________________________________________________________
+program:
+
+SELECT name, weapon 
+FROM "characters"
+
+
+output:
+
+name	weapon
+Han Solo	pistol
+Chewbacca	crossbow
