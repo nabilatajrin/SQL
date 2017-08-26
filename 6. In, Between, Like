@@ -1,0 +1,23 @@
+    IN - compares the column to multiple possible values, resolves true if it matches at least one
+    BETWEEN - checks if a value is within a range
+    LIKE - searches for a specific pattern
+
+we can use IN("value1","value2").
+
+SELECT * FROM albums WHERE genre IN ('pop','soul');
+
+If we want to get all the albums released between 1975 and 1985 we would write:
+SELECT * FROM albums WHERE released BETWEEN 1975 AND 1985;
+______________________________________________________________________________
+program:
+
+SELECT * 
+FROM albums 
+WHERE genre IN ('rock','soul');
+
+output:
+
+artist	album	released	genre	sales_in_millions
+AC/DC	Back in Black	1980	rock	50
+Pink Floyd	The Dark Side of the Moon	1973	rock	45
+Whitney Houston	The Bodyguard	1992	soul	44
