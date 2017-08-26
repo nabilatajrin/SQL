@@ -1,0 +1,10 @@
+program:
+
+SELECT * 
+FROM "characters" 
+WHERE weapon = "pistol";
+
+output:
+
+name	race	gender	weapon	hobby
+Han Solo	Human	male	pistol	shooting first
