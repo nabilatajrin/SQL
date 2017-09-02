@@ -1,0 +1,69 @@
+SQL is packed with functions that do all sorts of helpful stuff. Here are some of the most regularly used ones:
+
+    COUNT() - returns the number of rows
+    SUM() - returns the total sum of a numeric column
+    AVG() - returns the average of a set of values
+    MIN() / MAX() - gets the minimum/maximum value from a column
+
+albums
+artist	album	released	genre	sales_in_millions
+Michael Jackson	Thriller	1982	pop	70
+AC/DC	Back in Black	1980	rock	50
+Pink Floyd	The Dark Side of the Moon	1973	rock	45
+Whitney Houston	The Bodyguard	1992	soul	44
+____________________________________________________
+COUNT()
+#######
+
+SELECT COUNT(released) FROM albums;
+
+output:
+Results
+COUNT(released)
+4
+___________________
+SUM()
+#####
+
+SELECT SUM(genre) FROM albums;
+
+output:
+Results
+SUM(genre)
+0
+-----------
+SELECT SUM(released) FROM albums;
+
+output:
+Results
+SUM(released)
+7927
+___________________
+AVG()
+####
+SELECT AVG(sales_in_millions) FROM albums;
+
+output:
+Results
+AVG(sales_in_millions)
+52.25
+__________________
+MIN()
+#####
+
+SELECT MIN(released) FROM albums;
+
+output:
+Results
+MIN(released)
+1973
+__________________
+MAX()
+#####
+
+SELECT MAX(released) FROM albums;
+
+output:
+Results
+MAX(released)
+1992
