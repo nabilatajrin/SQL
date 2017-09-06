@@ -1,0 +1,25 @@
+video_games
+id	name	developer_id	genre
+1	Super Mario Bros.	2	platformer
+2	World of Warcraft	1	MMORPG
+3	The Legend of Zelda	2	adventure
+
+game_developers
+id	name	country
+1	Blizzard	USA
+2	Nintendo	Japan
+------------------------------------------
+
+SELECT video_games.name, video_games.genre, game_developers.name, game_developers.country 
+FROM video_games 
+INNER JOIN game_developers 
+ON video_games.developer_id = game_developers.id;
+
+
+
+output:
+
+name	genre	name	country
+Super Mario Bros.	platformer	Nintendo	Japan
+World of Warcraft	MMORPG	Blizzard	USA
+The Legend of Zelda	adventure	Nintendo	Japan
