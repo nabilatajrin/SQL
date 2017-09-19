@@ -1,0 +1,19 @@
+tv_series
+
+id	name	genre	still_running	imdb_rating
+1	Breaking Bad	drama	no	9.5
+2	Game of Thrones	comedy	yes	9.5
+3	Rick and Morty	comedy	yes	9.4
+4	Sherlock	mystery	yes	9.3
+
+---
+UPDATE tv_series 
+SET genre = 'drama' 
+WHERE id = 2;
+
+
+output:
+
+Results
+id	name	genre	still_running	imdb_rating
+2	Game of Thrones	drama	yes	9.5
