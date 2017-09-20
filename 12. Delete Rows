@@ -1,0 +1,18 @@
+tv_series
+id	name	genre	still_running	imdb_rating
+1	Breaking Bad	drama	no	9.5
+2	Game of Thrones	comedy	yes	9.5
+3	Rick and Morty	comedy	yes	9.4
+4	Sherlock	mystery	yes	9.3
+
+DELETE FROM tv_series 
+WHERE id = 4
+---------------------
+
+output:
+
+Results
+id	name	genre	still_running	imdb_rating
+1	Breaking Bad	drama	no	9.5
+2	Game of Thrones	comedy	yes	9.5
+3	Rick and Morty	comedy	yes	9.4
