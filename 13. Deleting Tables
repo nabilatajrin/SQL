@@ -1,0 +1,9 @@
+If we want to delete all the rows, but leave the table itself, the proper command is TRUNCATE:
+
+TRUNCATE TABLE table_name;
+
+In the case when we actually want to remove every trace of the table whatsoever, the DROP command comes into play:
+
+DROP TABLE table_name;
+
+Be very careful with these commands. There is no undo!
