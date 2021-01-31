@@ -16,7 +16,6 @@ INNER JOIN game_developers
 ON video_games.developer_id = game_developers.id;
 
 
-
 output:
 
 name	genre	name	country
