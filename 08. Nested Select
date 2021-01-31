@@ -12,7 +12,6 @@ WHERE released = (
  SELECT MIN(released) FROM albums
 );
 
-
 output:
 
 Results
