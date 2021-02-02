@@ -7,7 +7,6 @@ FROM albums
 WHERE genre = 'rock' AND sales_in_millions <= 50 
 ORDER BY released
 
-
 output:
 
 artist	album	released	genre	sales_in_millions
